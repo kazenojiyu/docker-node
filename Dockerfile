@@ -2,9 +2,6 @@
 # https://hub.docker.com/_/debian/
 FROM debian:latest
 
-RUN addgroup avocalix && \
-    useradd -d /home -s /bin/sh -g avocalix avocalix
-
 # replace shell with bash so we can source files
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
