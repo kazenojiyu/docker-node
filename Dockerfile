@@ -1,13 +1,3 @@
-#FROM huli/grunt
-
-#RUN apk add --no-cache su-exec && \
-#    addgroup avocalix && \
-#    adduser -D -h /home -s /bin/sh -G avocalix avocalix
-
-#WORKDIR /var/www/html
-
-#CMD [ "watch" ]
-
 # set the base image to Debian
 # https://hub.docker.com/_/debian/
 FROM debian:latest
